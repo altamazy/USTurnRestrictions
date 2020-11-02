@@ -27,14 +27,14 @@ The Turn Restriction generation is done in 150 steps:
 6. Post processing, which includes conflation with existing Turn Restrictions in OSM and filtering out incorrect predictions.
 
 ### Scheme
-![](/images/scheme.jpeg)
+![](/images/scheme.JPG)
 
 #### CNN architecture
 We train two models both with architectures based on [OverFeat] (https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhu_Traffic-Sign_Detection_and_CVPR_2016_paper.pdf) Network 
 First model is trained on ~10000 images and detects the following signs in the images. 
-![](/images/main_labels.jpeg)
+![](/images/main_labels.JPG)
 Secondary model is trained on additional ~1000 images and corrects the confusions with signs like
-![](/images/secondary_labels.jpeg)
+![](/images/secondary_labels.JPG)
 
 #### Metrics
 Precision and recall for pipeline's end-to-end performance are measured over an unbiased set of ~1500 intersections where traffic signs are detected. More accurate recall measurements are infeasible due to lack of ground true Turn Restrictions.
