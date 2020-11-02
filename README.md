@@ -27,14 +27,14 @@ The Turn Restriction generation is done in 150 steps:
 6. Post processing, which includes conflation with existing Turn Restrictions in OSM and filtering out incorrect predictions.
 
 ### Scheme
-![](/images/scheme.png)
+![](/images/scheme.jpeg)
 
 #### CNN architecture
 We train two models both with architectures based on [OverFeat] (https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhu_Traffic-Sign_Detection_and_CVPR_2016_paper.pdf) Network 
 First model is trained on ~10000 images and detects the following signs in the images. 
-![](/images/main_labels.png)
+![](/images/main_labels.jpeg)
 Secondary model is trained on additional ~1000 images and corrects the confusions with signs like
-![](/images/secondary_labels.png)
+![](/images/secondary_labels.jpeg)
 
 #### Metrics
 Precision and recall for pipeline's end-to-end performance are measured over an unbiased set of ~1500 intersections where traffic signs are detected. More accurate recall measurements are infeasible due to lack of ground true Turn Restrictions.
@@ -63,10 +63,7 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 <tr><td>Connecticut</td> <td>244</td> <td>352</td></tr>
 <tr><td>DC</td> <td>135</td> <td>25</td></tr>
 <tr><td>Delaware</td> <td>109</td> <td>51</td></tr>
-<tr><td>Florida_1</td> <td>600</td> <td>141</td></tr>
-<tr><td>Florida_2</td> <td>626</td> <td>123</td></tr>
-<tr><td>Florida_3</td> <td>617</td> <td>95</td></tr>
-<tr><td>Florida_4</td> <td>598</td> <td>131</td></tr>
+<tr><td>Florida</td> <td>2441</td> <td>490</td></tr>
 <tr><td>Georgia</td> <td>343</td> <td>305</td></tr>
 <tr><td>Idaho</td> <td>23</td> <td>45</td></tr>
 <tr><td>Illinois</td> <td>755</td> <td>463</td></tr>
@@ -89,7 +86,7 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 <tr><td>NewJersey</td> <td>1095</td> <td>289</td></tr>
 <tr><td>NewMexico</td> <td>102</td> <td>21</td></tr>
 <tr><td>NewYork</td> <td>1874</td> <td>906</td></tr>
-<tr><td>Norcal</td> <td>3426</td> <td>372</td></tr>
+<tr><td>NorthernCalifornia</td> <td>3426</td> <td>372</td></tr>
 <tr><td>NorthCarolina</td> <td>443</td> <td>309</td></tr>
 <tr><td>NorthDakota</td> <td>60</td> <td>51</td></tr>
 <tr><td>Ohio</td> <td>505</td> <td>518</td></tr>
@@ -97,11 +94,11 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 <tr><td>Oregon</td> <td>226</td> <td>107</td></tr>
 <tr><td>Pennsylvania</td> <td>1259</td> <td>664</td></tr>
 <tr><td>RhodeIsland</td> <td>59</td> <td>87</td></tr>
-<tr><td>Socal</td> <td>5652</td> <td>327</td></tr>
+<tr><td>SouthernCalifornia</td> <td>5652</td> <td>327</td></tr>
 <tr><td>SouthCarolina</td> <td>145</td> <td>210</td></tr>
+<tr><td>SouthDakota</td> <td>6</td> <td>-</td></tr>
 <tr><td>Tennessee</td> <td>145</td> <td>126</td></tr>
-<tr><td>Texas_1</td> <td>434</td> <td>175</td></tr>
-<tr><td>Texas_2</td> <td>461</td> <td>192</td></tr>
+<tr><td>Texas</td> <td>895</td> <td>367</td></tr>
 <tr><td>Utah</td> <td>114</td> <td>62</td></tr>
 <tr><td>Vermont</td> <td>33</td> <td>46</td></tr>
 <tr><td>Virginia</td> <td>763</td> <td>269</td></tr>
